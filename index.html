@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice</title>
+
+    <script src="https://kit.fontawesome.com/1b1ad55713.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    
+    
+    <div class="wrapper">
+        <div class="container">
+
+            
+
+            <div class="left-player-container active">
+                <div class="player1-details details">
+
+                    <div class="name-score">
+                        <h1 class="player-name active-player player-name1">Player 1</h1>
+                        <h1 class="total-score1">25</h1>
+                    </div>
+
+                    <div class="current-score-title">
+                        <h3 class="current-title" >Current</h3>
+                        <h2 class="current-score1">12</h2>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="right-player-container">
+                <div class="player2-details details">
+
+                    <div class="name-score">
+                        <h1 class="player-name player-name2">Player 2</h1>
+                        <h1 class="total-score2">0</h1>
+                    </div>
+
+                    <div class="current-score-title">
+                        <h3 class="current-title" >Current</h3>
+                        <h2 class="current-score2">12</h2>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="buttons">
+                <div class="new-game"><i class="fas fa-power-off"></i></div>
+                
+                <div class="dice">
+                    <div class="dice1">
+                        <img  src="/imagini/dice-1.png" id="dice1" alt="">
+                    </div>
+                    <div class="dice2">
+                        <img src="/imagini/dice-4.png" id="dice2" alt="">
+                    </div>
+                </div>
+                <div class="hold"><i class="far fa-pause-circle"></i></div>
+                <div class="roll"> <i class="fas fa-play"></i></div>
+
+                <input id="final" type="number" placeholder="FINAL SCORE">
+            </div>
+
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>

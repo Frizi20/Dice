@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,400&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+        body{
+            width: 100%;
+            height: 100vh;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .wrapper{
+            width: 100%;
+            height: 100%;
+            background:linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)),url('/imagini/back.jpg');
+            background-size: cover;
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-origin: content-box;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            max-width: 1200px;
+            width: 90%;
+            height: 80%;
+            background-color: white;
+            display: flex;
+            position: relative;
+        }
+
+        .container > div {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .left-player-container{
+        }
+
+        .details{
+            width: 70%;
+            height: 70%;
+            
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .active{
+            background-color: #f4f4f8;
+        }
+
+        .current-score-title{
+            width: 150px;
+            background-color: #e63737;
+            height: 100px;
+            font-weight: 200;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .player-name{
+            font-weight: 300;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+        }
+        .total-score1,
+        .total-score2{
+            font-weight: 200;
+            font-size: 5rem;
+            color: #EB4D4D;
+        }
+
+        .current-title{
+            font-size: 1.5rem;
+            color: #000000;
+            text-transform: uppercase;
+            font-weight: 300;
+        }
+
+        .current-score1{
+            color: white;
+            font-size: 2rem;
+            font-weight: 300;
+        }
+        .current-score2{
+            color: white;
+            font-size: 2rem;
+            font-weight: 300;
+        }
+
+        .buttons{
+            position: absolute;
+            height: 90%;
+            width: unset !important;
+            /* border: 1px solid black; */
+            z-index: 2;
+            left: 50%;
+            transform: translateX(-50%);
+
+            display: flex;
+            flex-direction: column;
+            font-family: 'Lato' ;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: rgb(56, 56, 56);
+
+            justify-content: space-around !important;
+            align-items: center;
+
+        }
+
+        #final{
+            font-size: 18px;
+            text-align: center;
+            width: 60%;
+        }
+
+        #final::placeholder{
+            text-align: center;
+        }
+
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        input[type="number"] {
+            -moz-appearance: textfield;
+        }
+
+
+        .hold{
+            margin-bottom: -20px;
+        }
+
+        .dice > div{
+            width: 100px;
+            box-shadow: 0 0 24px rgba(0, 0, 0, 0.178);
+        }
+        
+        .dice img{
+            width: 100%;
+            vertical-align:middle;
+            
+        }
+        .dice2{
+            margin-top: 50px;
+        }
+
+        .new-game::after{
+            content: 'NEW GAME';
+            margin-left: 10px;
+        }
+
+
+
+        .roll::after{
+            content: 'ROLL DICE';
+            margin-left: 10px;
+        }
+        .hold::after{
+            content: 'HOLD';
+            margin-left: 10px;
+            
+        }
+
+        .new-game,
+        .hold,
+        .roll{
+            cursor: pointer;
+        }
+
+        .new-game:hover i,
+        .hold:hover i,
+        .roll:hover i {
+            margin-right: 4px;
+        }
+
+        
+
+        .new-game:hover,
+        .hold:hover,
+        .roll:hover {
+            font-weight: 500;
+        }
+
+        .active-player{
+            position: relative;
+            text-shadow: 1px 0 0.1px rgba(0, 0, 0, 0.685);
+        }
+        
+        .active-player::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: red;
+            top: 50%;
+            transform: translate(15px,-50%);
+            
+        }
+
+        .winner{
+            color: red;
+            font-weight: 400;
+            font-size: 3rem;
+        }
+
+
+        @media screen and (max-width:600px){
+            :root{
+                font-size: 10px;
+            }
+
+            .dice > div{
+                width: 50px;
+            }
+            .current-score-title{
+                width: 80px;
+                height: 50px;
+            }
+            .dice{
+                margin-top: 100px;
+            }
+
+            .palyer1-details{
+                margin-right: 30px !important;
+            }
+            .player2-details{
+                
+            }
+
+            #final::placeholder{
+                font-size: 12px;
+            }
+           
+        }
