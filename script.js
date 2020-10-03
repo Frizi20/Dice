@@ -45,8 +45,8 @@ rollDom.addEventListener('click',function(){
         //make dice visible
         //Change the dice images with the random values
 
-        dice1Dom.src = `imagini/dice-${random1}.png`;
-        dice2Dom.src = `imagini/dice-${random2}.png`;
+        dice1Dom.src = `./imagini/dice-${random1}.png`;
+        dice2Dom.src = `./imagini/dice-${random2}.png`;
 
         document.querySelector('.dice').style.visibility='visible';
 
